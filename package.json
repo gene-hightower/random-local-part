@@ -1,0 +1,36 @@
+{
+  "name": "random-local-part",
+  "version": "1.0.0",
+  "description": "A TS package to generate a random string for use as mailbox local-part.",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist node-modules",
+    "prettier": "prettier --write **/*.{ts,md}",
+    "test": "jest dist/test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gene-hightower/tspkg.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "CI",
+    "github actions"
+  ],
+  "author": "Gene Hightower <gene@digilicious.com> (https://digilicious.com/)",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/gene-hightower/tspkg/issues"
+  },
+  "homepage": "https://github.com/gene-hightower/tspkg#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "gts": "^3.1.1",
+    "jest": "^29.5.0",
+    "prettier": "2.8.7"
+  }
+}
