@@ -7792,11 +7792,12 @@ const base32_crockford_alphabet = [
 ];
 
 function rand_n(n: number): number {
-  return Math.floor(Math.random() * n) + 1;
+  // returns random integer in the range 0..n-1
+  return Math.floor(Math.random() * n);
 }
 
 function rand_str(str_array: string[]): string {
-  const n = str_array.length - 1;
+  const n = str_array.length;
   return str_array[rand_n(n)];
 }
 
